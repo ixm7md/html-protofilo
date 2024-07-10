@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=", initial-scale="1.0">
+    <title>Ericas blog</title>
+   <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+        font-family: "Tajawal", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+
+body{
+        background-color: #E8E8E8;
+}     
+nav{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100px;
+        padding:10px 90px;
+        box-sizing: border-box;
+        background-color: #F4F4F2;
+}
+nav .logo{
+        height: 100px;
+        width: 100px;
+        float:left;
+        position:relative;
+        box-sizing:border-box;
+}
+
+nav ul{
+        list-style:none;
+        float:right;
+        margin:0;
+        padding:0;
+        display: flex;
+}
+nav ul li a{
+        line-height: 80px;
+        color:#495464;
+        padding:12px 30px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+nav ul li a:hover{
+        background: rgba(0,0,0,0.7);
+        border-radius: 10px;
+        color: #F4F4F2;
+}
+
+
+     
+      .nav2{
+        left: 0;
+        margin-top: 100px;
+        height:90px;
+        width: 100%;
+        background-color: #0288d6;
+        display: flex;
+        
+        justify-content: center;
+}
+
+.nav2 ul{
+        list-style:none;
+
+        margin:0;
+        padding:0;
+        display: flex;
+       
+        
+}
+.nav2 ul li a{
+        line-height: 80px;
+        color:#ffffff;
+        padding:12px 30px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        
+}
+.nav2 ul li a:hover{
+        background: rgba(0,0,0,0.7);
+        border-radius: 20px;
+        color: #F4F4F2;
+}
+ 
+ 
+ .inst{
+        height: 80px;
+ }
+ 
+ .wlc{
+        font-size: 30px;
+ }
+ .overlay{
+        background-color: rgba(0,0,0,0.3);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 10;
+ }
+
+ .container {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        }
+        .img1 ,.img2 ,.img3 ,.img4 ,.img5 ,.img6 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        object-fit: cover;
+        animation: fade 9s ease-in-out infinite alternate;
+        }
+ .inst{
+        height: 20px;
+ }
+ @keyframes slideIn {
+       0% {
+           transform: translateY(100%);
+           opacity: 0;
+       }
+       100% {
+           transform: translateY(0);
+           opacity: 1;
+       }
+   }
+
+ .heading{
+        color: #F4F4F2;
+        font-size: 50px;
+        position: relative;
+        z-index: 100;
+        animation: slideIn 1s ease-in-out forwards;
+       
+        
+ }
+ .para{
+       color: #F4F4F2;
+       font-size: 25px;
+       position: relative;
+       z-index: 100;
+       position: absolute;
+       width: 550px;
+       margin-top: 110px;
+       border-radius: 2px  solid #FFF;
+       animation: slideIn 1s ease-in-out forwards;
+       
+}
+ footer{
+        background-color: #495464;
+        z-index: 100;
+ }
+ .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        z-index: 100;
+        }
+        .footer-content h3{
+        font-size:20px;
+        font-weight: bold;
+        line-height: 50px;
+        color: #F4F4F2;
+        z-index: 100;
+        
+        }
+ .socials {
+        list-style: none;
+        display: flex;
+         align-items: center;
+        justify-content: center;
+        z-index: 100;
+               
+         }
+        
+                        .socials a{
+                        text-decoration: none;
+                        color:#fff;
+                        height: 20px;
+                        }
+                       
+                         .socials .inst{
+                                height: 30px;
+                         }
+                        
+   </style>
+    
+<nav>
+    <div ><a href="/mainpage.html"><img src="images/Untitled design.png"class="logo"></a></div>
+
+        <ul>
+            
+           
+            <li><a href="callus.html">أتصل بنا</a></li>
+             <li><a href="aboutus.html">من نحن؟</a></li>
+            <li><a href="mainpage.html">الرئيسية</a></li>
+        </ul>
+    
+</nav>
+
+
+    <div class="nav2">
+        <ul>
+                <li><a href="spain.html">مدريد</a></li>
+                <li><a href="roma.html">روما</a></li>
+                <li><a href="hongkong.html">هونغ كونغ</a></li>
+                <li><a href="russia.html">موسكو</a></li>
+                <li><a href="germany.html">ماكاو</a></li>
+                <li><a href="uk.html">نيوزلندا</a></li>
+        </ul>
+    
+    </div>
+
+
+</div>
+
+
+
+<div class="container">
+    <div class="overlay"></div>
+    <img src="images/New Zealand.jpg" alt="" class="img1">
+   
+    <h1 class="heading" dir="rtl">نيوزلندا</h1>
+   
+      
+    <p class="para" dir="rtl"> نيوزيلندا تعتبر واحدة من أكثر الوجهات السياحية جاذبية في العالم بفضل جمال طبيعتها الخلابة وتنوع معالمها السياحية. تحتضن هذه الجزيرة الجنوبية والشمالية مجموعة متنوعة من المعالم الطبيعية الرائعة، بدءًا من السهول الخضراء والجبال الشاهقة إلى الشواطئ الرملية الذهبية والبحيرات الزرقاء الصافية. يُعتبر السفر إلى نيوزيلندا تجربة لا تُنسى لمحبي الطبيعة والمغامرة، حيث يمكن للسياح الاستمتاع بمجموعة متنوعة من الأنشطة مثل ركوب الأمواج، والتزلج على الجليد، والتسلق في الجبال، وركوب الدراجات في الطبيعة الخلابة. بالإضافة إلى ذلك، تتمتع نيوزيلندا بتراث ثقافي غني ومتنوع يمكن للزوار استكشافه من خلال زيارة المتاحف والقرى التقليدية. بغض النظر عن اهتمامات السائح، فإن نيوزيلندا توفر تجارب فريدة ولا تُنسى لكل من يزورها. </p>
+
+</div>
+
+
+
+
+<footer>
+    <div class="footer-content">
+        <h3>&copy;2024 كل الحقوق تعود لشركة أيريكا </h3>
+        
+        <ul class="socials">
+        <li><a href="#"><img src="images/instagram.png" class="inst"></a></li>
+        <li><a href="#"><img src="images/facebook.png" class="inst"></a></li>
+        <li><a href="#"><img src="images/twitter.png" class="inst"></a></li>
+        
+        </ul>
+        </div> 
+    
+  </footer>
+
+
+</body>
+</html>
